@@ -6,3 +6,14 @@ const templateCarrito = document.getElementById('template-carrito').content
 const templateFooter = document.getElementById('template-footer').content
 const fragment = document.createDocumentFragment()
 let carrito = {}
+
+//traer productos
+const fetchData = async () => {
+    try {
+        const res = await fetch('rickandmorty.json')
+        const data = await res.json()
+        pintarCards(data)
+    } catch (error) {
+        console.log(error)
+    }
+}
