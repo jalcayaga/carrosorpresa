@@ -4,16 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ------------------------------- estilos ------------------------------- -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="/bootstrap.css">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <!-- ------------------------------- script -------------------------------- -->
     <script src="/js/app.js"></script>
+    <!-- ------------------------------- favicon ------------------------------- -->
+    <link rel="shortcut icon" href="img/favicon.ico" />
     <title>Carro Sorpresa</title>
 </head>
 <body>
+<!-- ------------------------------- navbar -------------------------------- -->
+<nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand">Carro de Compras</a>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="NFT" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+    </div>
+  </nav>
+
 
     <!-- ------------------- contenedor para carro de compra ------------------- -->
     <div class="container">
-        <h4>Carro de compras</h4>
+        
         <hr>
         <table class="table">
             <thead>
@@ -28,7 +43,7 @@
             <tbody id="items"></tbody>
             <tfoot>
                 <tr id="footer">
-                    <th scope="row" colspan="5">Carro vació - Comience a comprar!</th>
+                    <th scope="row" colspan="5">Carro vació - Comience a comprar su NFT!</th>
                 </tr>
             </tfoot>
         </table>
