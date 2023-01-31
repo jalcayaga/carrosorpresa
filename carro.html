@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+</head>
+<body>
+   <!-- ------------------------------- navbar -------------------------------- -->
+   <nav class="container navbar navbar-dark bg-dark" id="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand">Carro de Compras</a>
+      <form class="d-flex">
+        <input
+          class="form-control me-2"
+          type="search"
+          placeholder="NFT"
+          aria-label="Search"
+        />
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+        <div>
+          <span class="input-group-text">@<span id="displayed-name"></span></span> 
+        </div>
+        
+      </form>
+    </div>
+  </nav>
+       <!-- ------------------- contenedor para carro de compra ------------------- -->
+       <div class="container">
+        <div class="inputusuario d-flex">
+      <h4 class="d-flex col-md-3">Personaliza tu compra:</h4>
+      <div class="input-group">
+        <input type="text" id="name" class="form-control col-md-4" placeholder="Ingresa tu nombre">
+        <button class="btn btn-outline-secondary" type="button" onclick="displayName()">Enviar</button>
+      </div>
+    </div>
+      <hr />
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Item</th>
+            <th scope="col">Cantidad</th>
+            <th scope="col">Acción</th>
+            <th scope="col">Total</th>
+          </tr>
+        </thead>
+        <tbody id="items"></tbody>
+        <tfoot>
+          <tr id="footer">
+            <th scope="row" colspan="5">
+              Carro vació - Comience a comprar su NFT!
+            </th>
+          </tr>
+        </tfoot>
+      </table>
+      <div class="row" id="cards"></div>
+    </div>
+    
+</body>
+</html>
